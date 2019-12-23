@@ -1,13 +1,13 @@
 class Run < Formula
   desc "Easily manage and invoke small scripts and wrappers"
   homepage "https://github.com/TekWizely"
-  url "https://github.com/TekWizely/run/archive/v0.6.3.tar.gz"
-  sha256 "00725eae31e70fb91d708990643303f2a1eb512d116aaea3f586485f854c0358"
+  url "https://github.com/TekWizely/run/archive/v0.6.4.tar.gz"
+  sha256 "ac667bf25180b73119526453168b40c935efba2de84b4faae55ed4bc01fe8ad8"
 
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-trimpath", "-ldflags", "-w -s", "-o", bin/name
+    system "go", "build", "-trimpath", "-ldflags", "-w -s -X main.GitSummary=brew", "-o", bin/name
   end
 
   test do
