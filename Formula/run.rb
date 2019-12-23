@@ -1,8 +1,8 @@
 class Run < Formula
   desc "Easily manage and invoke small scripts and wrappers"
   homepage "https://github.com/TekWizely"
-  url "https://github.com/TekWizely/run/archive/v0.6.4.tar.gz"
-  sha256 "ac667bf25180b73119526453168b40c935efba2de84b4faae55ed4bc01fe8ad8"
+  url "https://github.com/TekWizely/run/archive/v0.6.5.tar.gz"
+  sha256 "5878541e8e29026bf352f78283424217dbf7322a8282cac13b87aa04644e1b58"
 
   depends_on "go" => :build
 
