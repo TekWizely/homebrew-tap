@@ -1,8 +1,8 @@
 class BashTpl < Formula
   desc "A smart, lightweight shell script templating engine, written in Bash"
   homepage "https://github.com/TekWizely/bash-tpl"
-  url "https://github.com/TekWizely/bash-tpl/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "1dfc1172d89bae0dd4b2335f79499af2629c3e7b51ead5e50044e40545feebac"
+  url "https://github.com/TekWizely/bash-tpl/releases/download/v0.2.0/bash-tpl"
+  sha256 "f90044ab42236c71d86934e3d166bb86d241d8182f78ddc6b60429aab93efa9f"
 
   depends_on "bash"
 
