@@ -14,7 +14,7 @@ class BashTpl < Formula
     tpl = "Hello <% $NAME %>!"
     text = "Hello Homebrew!"
     (testpath/"test.tpl").write <<~EOS
-        #{tpl}
+      #{tpl}
     EOS
     assert_equal text, shell_output("NAME='Homebrew' #{bin}/#{name} test.tpl").chomp
   end
